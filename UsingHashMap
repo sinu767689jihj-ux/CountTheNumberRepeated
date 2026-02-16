@@ -1,0 +1,22 @@
+import java.util.HashMap;
+public class CountTheNumberRepeatedUsingHashMap {
+   public static void main(String[] args) {
+    {
+        HashMap<Integer,Integer> map=new HashMap<>();
+        int[] arr={2,3,4,1,2,3,4,5,6,6,7};
+        for(int i=0;i<arr.length;i++)
+        {
+           int n=arr[i];
+           if(map.containsKey(n))
+            {
+                int count=map.get(n);
+                map.put(n,count+1);
+            } 
+            else
+            {
+                map.put(n,1);
+            }
+        }
+    }
+}
+}
